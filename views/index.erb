@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>変数を使ってプログラミング</title>
+  <link href="css/layout.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+  <div class="result">
+    <div class="balloon">
+      ようこそ<br>
+      <%= @name || "ゲスト" %>さん
+    </div>
+  </div>
+  <form action="/" method="GET" class="form">
+    <label for="name-1">名前</label>
+    <input id="name-1" type="text" name="name" placeholder="ここに書いてみよう">
+    <input type="submit" value="送信">
+  </form>
+</div>
+</body>
+</html>
